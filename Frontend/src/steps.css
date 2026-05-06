@@ -1,0 +1,62 @@
+.steps-container{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.primary-text{
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+}
+
+.primary-text h2{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.secondary-text{
+    width: 100%;
+    max-width: 810px;
+    margin: auto;
+}
+
+.secondary-text p{
+    font-size: 13px;
+    color: #3E3E3E;
+    line-height: 1.5;
+    margin-top: -13px;
+}
+
+.steps-text{
+    margin-top: 100px;
+}
+
+.steps-text h2{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.steps-image img{
+    width: 970px;
+}
+
+.steps-image{
+    margin-bottom: 30px;
+}
+
+.stepsbtn button{
+    background-image: url('/public/stepsbtn.jpg');  
+    background-size: cover;                           
+    background-position: center;                      
+    background-repeat: no-repeat;  
+
+    color: black;
+    padding: 18px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}

@@ -1,0 +1,66 @@
+.header {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .side1 img {
+    width: 37px;
+    height: auto;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+
+
+.side1, .side2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-text h2 {
+    font-size: 18px;
+}
+
+.loginbtn button {
+    background-color: white;
+    color: #7859F6;
+    border-radius: 6px;
+    border-color: #7859F6;
+    padding: 10px;
+    font-weight: bold;
+    border-width: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.loginbtn button:hover {
+    background-color: #f0f0f0;
+}
+
+.signupbtn button {
+    background-color: #7859F6;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding: 11px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.signupbtn button:hover {
+    background-color: #6c4fe1;
+}
+
+.header-line {
+    border: none;
+    border-top: solid rgb(230, 230, 230);
+    margin-top: -1px;
+}

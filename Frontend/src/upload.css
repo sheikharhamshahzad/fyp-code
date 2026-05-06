@@ -1,0 +1,903 @@
+/* General Page Styles */
+.upload-container,
+.preview-container,
+.options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #111014;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+.options-container{
+  min-height: 110vh;
+}
+
+.result-separation{
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+.upload-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: -15px;
+}
+
+.upload-header2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 29px;
+}
+
+
+.upload-header3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-left: 15px;
+}
+
+.upload-logo {
+  width: 37px;
+  height: 37px;
+}
+
+.upload-logo2 {
+    width: 37px;
+    height: 37px;
+  }
+
+.upload-logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.upload-logo-text2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+
+  .upload-logo-text3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+.upload-title {
+    font-size: 25px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #AC72FF 0%, #679BFF 48%, #E176EA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 60px;
+  }
+
+  .options-top .options-title{
+    font-size: 25px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #AC72FF 0%, #678BFF 48%, #E176EA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 60px;
+    margin-left: 657px;
+    max-width: max-content;
+    margin-right: auto;
+  }
+
+.upload-subtitle {
+  font-size: 11px;
+  color: #a3a3a3;
+  margin-top: -2px;
+  margin-bottom: 70px;
+}
+
+.upload-box {
+    background-color: #201F2C;
+    border-radius: 10px;
+    width: 56%;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  .preview-box{
+    background-color: #201F2C;
+    border-radius: 10px;
+    width: 56%;
+    height: 330px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .upload-box::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    border: 1.5px dashed rgb(76, 76, 76);
+    border-radius: 10px; /* Slightly smaller radius for inset effect */
+    pointer-events: none; /* Ensures it doesn't interfere with interaction */
+  }
+
+  .result-box{
+    border-radius: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding: 35px 0;
+    justify-content: center;
+    margin-bottom: 2rem;
+    position: relative;
+    border: 1.5px dashed rgb(76, 76, 76);
+  }
+
+  .result-heading{
+    text-align: left;
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+  }
+
+
+.upload-area {
+  text-align: center;
+  cursor: pointer;
+}
+
+.upload-icon {
+  width: 190px;
+  height: 140px;
+  margin-bottom: 1rem;
+  margin-top: 20px;
+}
+
+.upload-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Waveform Preview */
+.waveform-container {
+  width: 85%;
+  height: 60px;
+  background: #7D4BDC;
+  border-radius: 10px;
+  padding: 30px 10px;
+}
+
+.waveform-denoise-container {
+  width: 85%;
+  height: 60px;
+  background: #039572;
+  border-radius: 10px;
+  padding: 30px 10px;
+}
+
+.waveform-separation-container {
+  width: 85%;
+  height: 60px;
+  background: #039572;
+  border-radius: 10px;
+  padding: 30px 10px;
+}
+
+
+
+
+
+
+/* Play Button */
+.play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px; /* Adjust size as needed */
+    height: 35px;
+    border-radius: 50%;
+    background-color: #9871e4;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .play-button:hover {
+    background-color: #5c469c;
+  }
+  
+  .play-icon {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 12px; /* Triangle for play icon */
+    border-color: transparent transparent transparent #fff;
+    transition: transform 0.3s ease;
+    margin-left: 2px;
+  }
+  
+  .pause-icon {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: relative;
+  }
+  
+  .pause-icon::before,
+  .pause-icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 4px;
+    height: 12px;
+    background-color: #fff;
+  }
+  
+  .pause-icon::before {
+    left: 2px;
+  }
+  
+  .pause-icon::after {
+    right: 2px;
+  }
+
+
+
+
+
+  /* Play Denoise Button */
+  /* Play Button */
+.play-button-denoise {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px; /* Adjust size as needed */
+  height: 35px;
+  border-radius: 50%;
+  background-color: #08b58c;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.play-button-denoise:hover {
+  background-color: #005d47;
+}
+
+.play-icon-denoise {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 0 7px 12px; /* Triangle for play icon */
+  border-color: transparent transparent transparent #fff;
+  transition: transform 0.3s ease;
+  margin-left: 2px;
+}
+
+.pause-icon-denoise {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 2px;
+  position: relative;
+}
+
+.pause-icon-denoise::before,
+.pause-icon-denoise::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 4px;
+  height: 12px;
+  background-color: #fff;
+}
+
+.pause-icon-denoise::before {
+  left: 2px;
+}
+
+.pause-icon-denoise::after {
+  right: 2px;
+}
+
+
+
+
+
+
+.play-button-separation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px; /* Adjust size as needed */
+  height: 35px;
+  border-radius: 50%;
+  background-color: #08b58c;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.play-button-separation:hover {
+  background-color: #005d47;
+}
+
+.play-icon-separation {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 0 7px 12px; /* Triangle for play icon */
+  border-color: transparent transparent transparent #fff;
+  transition: transform 0.3s ease;
+  margin-left: 2px;
+}
+
+.pause-icon-separation {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 2px;
+  position: relative;
+}
+
+.pause-icon-separation::before,
+.pause-icon-separation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 4px;
+  height: 12px;
+  background-color: #fff;
+}
+
+.pause-icon-separation::before {
+  left: 2px;
+}
+
+.pause-icon-separation::after {
+  right: 2px;
+}
+
+
+
+
+
+/* Upload Button */
+.upload-button {
+  background-color: #7C70FF;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: not-allowed;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.options-button {
+  background-color: #7C70FF;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 10rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: not-allowed;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.download-button {
+  background-color: #7C70FF;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.options-main-card .options-button{
+  display: flex;
+  margin-left: 20px;
+  font-size: 14px;
+  position: absolute;
+}
+
+
+.download-main-card .download-button{
+  display: flex;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  margin-right: 160px;
+}
+
+.upload-button.active {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.options-button.active {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.download-button.active {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.upload-button:hover.active {
+  background-color: #7756d8;
+}
+
+.preview-box2{
+  margin-bottom: 40px;
+}
+
+.options-button:hover.active {
+  background-color: #7756d8;
+}
+
+/* Footer Text */
+.upload-footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #a3a3a3;
+}
+
+.upload-footer a {
+  color: #bb86fc;
+  text-decoration: none;
+}
+
+.upload-footer a:hover {
+  text-decoration: underline;
+}
+
+.preview-items{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    background-color: #7D4BDC ;
+    padding: 0px 20px;
+    height: 120px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.preview-denoise-items{
+  display: flex;
+  align-items: center;
+  width: 85%;
+  background-color: #049673 ;
+  padding: 0px 20px;
+  height: 120px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.preview-separation-items{
+  display: flex;
+  align-items: center;
+  width: 85%;
+  background-color: #049673 ;
+  padding: 0px 20px;
+  height: 120px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px !important;
+}
+
+.preview-items2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 55px;
+    margin-bottom: 5px;
+}
+
+.preview-items2-left{
+    justify-content: left;
+    justify-items: left;
+    margin-left: 50px;
+}
+
+.preview-items2-right{
+
+    justify-content: right;
+    justify-items: right;
+    margin-right: 60px;
+    
+}
+
+.delete-icon4{
+    background-color: #201F2C;
+    border: none;
+    margin-left: 30px;
+    color: white;
+    background: none; /* Remove background */
+        border: none; /* Remove border */
+        cursor: pointer; /* Show pointer cursor */
+        transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover animation */
+
+   
+      
+
+}
+.upload-icon2{
+    cursor: pointer;
+    background-color: #201F2C;
+    border: none;
+    color: white;
+}
+
+
+.options-main-card{
+  background-color: #201F2C;
+  border-radius: 10px;
+  width: 87%;
+  flex-grow: 1.5;
+  
+  
+}
+
+.main-options-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.options-top{
+  height: 150px;
+  width: 100%;
+  background-color: #111014;
+  padding-top: 40px;
+  
+}
+
+
+.options-main-card2{
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.options-main-card-left {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.leftside-container{
+  width: 600px;
+  max-height:max-content;
+  
+}
+
+.options-main-card-right{
+  width: 1000px;
+  height: auto;
+  margin-top: -85px;
+ 
+
+}
+
+.options-cards {
+  background: #2B2936;
+  border-radius: 8px;
+  width: 140px;
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 500;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  text-align: left;
+  gap: 19px;
+}
+
+
+
+.options-cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.options-cards span {
+  flex: 1;
+}
+
+/* Play Button Styling */
+.play-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50%; /* Circular Button */
+  background: #4a4856; /* No Background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.play-btn::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 8px; /* Triangle Shape */
+  border-color: transparent transparent transparent white; /* Triangle Color */
+  transition: border-color 0.2s;
+  margin-left: 2px;
+}
+
+
+.select-option-text{
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: -10px;
+}
+
+.options-cards.active {
+  border: 2px solid #7C70FF; /* Blue border for selected option */
+  box-shadow: 0 0 8px rgba(124, 112, 255, 0.5); /* Soft glow effect */
+}
+
+
+.denoise{
+  width: 700px;;
+  height: 100px;
+  border-radius: 10px;
+}
+
+
+.speaker-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.speaker {
+  text-align: center;
+}
+
+.icon-happy {
+  color: #fcd34d; /* Yellow */
+}
+
+.icon-sad {
+  color: #60a5fa; /* Blue */
+}
+
+.icon-angry {
+  color: #f87171; /* Red */
+}
+
+.icon-neutral {
+  color: #9ca3af; /* Gray */
+}
+
+
+
+.result-isolate {
+  padding: 20px;
+  text-align: center;
+}
+
+.isolate-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+/* Each Speaker Container */
+.speaker {
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center icon and text horizontally */
+  gap: 10px; /* Space between elements */
+}
+
+/* Icon and Slider Container */
+.icon-slider-container {
+  display: flex;
+  flex-direction: row; /* Arrange icon and slider side by side */
+  align-items: center; /* Align icon and slider vertically */
+  gap: 10px; /* Space between icon and slider */
+}
+
+/* Speaker Icon */
+.icon {
+  font-size: 20px; /* Reduced icon size */
+  color: #ffffff; /* Icon color set to white */
+}
+
+/* Speaker Text */
+.speaker p {
+  margin: 0;
+  font-size: 12px; /* Smaller font size for text */
+  text-align: center;
+  color: #ffffff; /* Text color set to white */
+}
+
+/* Styling the vertical sliders */
+.volume-slider {
+  -webkit-appearance: slider-vertical; /* Enables vertical slider */
+  width: 6px; /* Narrower slider track width */
+  height: 60px; /* Reduced slider track height */
+  background: #ddd; /* Track background */
+  border-radius: 5px; /* Rounded track corners */
+  outline: none; /* Remove focus outline */
+  cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default thumb styling */
+  appearance: none;
+  width: 14px; /* Smaller thumb width */
+  height: 14px; /* Smaller thumb height */
+  background: #4ade80; /* Thumb color */
+  border-radius: 50%; /* Rounded thumb */
+  cursor: pointer;
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: #4ade80;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.result-sonify h2{
+  background: linear-gradient(
+    to right,
+    rgba(255, 188, 15, 0.7) 0%,   /* #FFBC0F at 70% opacity */
+    #FF2776 25%,                   /* #FF2776 at full opacity */
+    #8C33FF 66%,                   /* #8C33FF at full opacity */
+    #2AF0E4 100%                   /* #2AF0E4 at full opacity */
+  );
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+  text-fill-color: transparent;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.2); /* Light transparent border */
+  border-left-color: white; /* White spinner */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-top: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+.speaker-label {
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+
+
+.speaker-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.speaker-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.speaker-checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.merge-button {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.merge-button:disabled {
+    background: #666;
+    cursor: not-allowed;
+}
+
+.merge-button.active:hover {
+    background: #357abd;
+}
+
+.language-select-wrapper{
+  margin-bottom: 44px;
+  margin-top: -81px;
+  margin-left: 130px;
+}
+
+.language-dropdown{
+  background: #2B2936;
+  border-radius: 8px;
+  padding: 10px 20px;
+  width: 140px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 500;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  appearance: none;
+}
+

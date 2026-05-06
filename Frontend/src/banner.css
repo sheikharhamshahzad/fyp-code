@@ -1,0 +1,82 @@
+.banner-background {
+    background-image: url('/public/background.jpg');  
+    background-size: cover;                           
+    background-position: center;                      
+    background-repeat: no-repeat;                     
+    height: 480px;     
+    margin-top: 10px;                               
+  }
+
+  .banner-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  .video {
+    width: 570px;              /* Make the video fill the entire width of its container */
+    height: 100%;             /* Make the video fill the entire height of its container */
+    object-fit: cover;        /* Ensures the video covers the container without stretching */
+    border-radius: 20px ;
+  }
+
+  .banner-text h1{
+    font-size: 52px;
+  }
+
+  .banner-text{
+    text-align: left;
+    margin-left: 130px;
+    width: 100%;
+    max-width: 850px;
+    margin-bottom: 20px;
+  }
+
+  .banner-subtext{
+    width: 100%;
+    max-width: 520px;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-top: -15px;
+  }
+
+  .banner-video{
+    justify-content: right;
+    margin-right: 150px;
+    margin-top: 65px;
+  }
+
+  
+
+  .bannerbtn{
+  display: flex;               /* Use flexbox to arrange items horizontally */
+  align-items: center;         /* Vertically align the image and text */         /* Add some padding to the button */
+  background-image: url('/public/banner-btn-back.jpg');  
+background-size: cover;  
+color: white;
+padding: 13px;
+border-radius: 30px;
+padding-left: 22px;
+padding-right: 22px;
+border: none;       
+  cursor: pointer; 
+  justify-content: left;
+  width: auto;
+  max-width: 170px;
+  margin-top: 40px;
+
+  }
+
+  .button-image {
+    width: auto;                 /* Set the width of the image */
+    height: 30px;                /* Set the height of the image */
+
+  }
+
+  .button-text{
+    font-size: 13px;
+    font-weight: 550;
+  }
+
+ 

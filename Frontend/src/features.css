@@ -1,0 +1,68 @@
+.features-container{
+    background-image: url('/public/features.jpg');  
+    background-size: cover;                           
+    background-position: center;                      
+    background-repeat: no-repeat; 
+    height: 1300px;
+    
+}
+
+.content-wrapper {
+    position: relative;                    /* Keeps content within this wrapper */
+    padding-top: 70px;                     /* Adjust this to move the content down */
+}
+
+.features-headingg h1 {
+    font-weight: 600;
+    margin: 0;                             /* Removes default margin */
+}
+
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 65px;
+    text-align: center;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .card h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    margin-top: 50px;
+  }
+
+  .card p {
+    font-size: 16px;
+    margin-bottom: 35px;
+    font-weight: 500;
+  }
+
+  .card button {
+    background-color: #7859F6;
+    color: white;
+    border: none;
+    border-radius: 48px;
+    padding: 10px 24px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .card button:hover {
+    background-color: #6a3bd3;
+  }
+
+
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    gap:20px;
+}
+
+.rightcards{
+    margin-top: 70px;
+}

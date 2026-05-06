@@ -1,0 +1,176 @@
+/* Overlay background */
+.signup-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeInOverlay 0.4s forwards;
+}
+
+.signup-popup-overlay.fade-out {
+    animation: fadeOutOverlay 0.4s forwards;
+}
+
+/* Main popup container */
+.signup-popup {
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+    height: 550px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transform: translateY(-200px); /* Start above the viewport */
+    opacity: 0;
+    animation: slideIn 0.4s ease-out forwards;
+}
+
+.signup-popup.slide-out {
+    animation: slideOut 0.4s ease-in forwards;
+}
+
+/* Left side content */
+.signup-left {
+    flex: 1;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #ffffff;
+}
+
+.signup-left h2 {
+    margin-bottom: 45px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #000000;
+    margin-left: 40px;
+}
+
+.signup-left form input {
+    width: 90%;
+    padding: 15px 20px;
+    margin: 4px 0;
+    border: 1px solid #bebebe;
+    border-radius: 30px;
+    font-size: 13px;
+    color: black;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.signup-left form input:focus {
+    border-color: #7859F6;
+    box-shadow: 0 0 5px rgba(120, 89, 246, 0.4);
+}
+
+.signup-button {
+    background: linear-gradient(90deg, #7859F6, #9b68ff);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    width: 105%;
+    margin-top: 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+.signup-button:hover {
+    background: linear-gradient(90deg, #6c4fe1, #8759ff);
+}
+
+/* Footer text */
+.signup-footer {
+    font-size: 10px;
+    color: #777;
+    line-height: 1.5;
+    text-align: center;
+    margin-left: 37px;
+}
+
+.already-have-account {
+    font-size: 11px;
+    color: #000000;
+    line-height: 1.5;
+    text-align: center;
+    margin-left: 85px;
+    margin-top: 30px;
+}
+
+.already-have-account a {
+    color: #7859F6;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.already-have-account a:hover {
+    text-decoration: underline;
+}
+
+/* Right side illustration */
+.signup-right {
+    flex: 1;
+    position: relative;
+    background: linear-gradient(135deg, #fde7f3, #fad2eb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.illustration img {
+    height: 550px;
+    width: 370px;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInOverlay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutOverlay {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,86 @@
+/* FAQ Container */
+.faq-container {
+    width: 50%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    margin-bottom: 80px;
+  }
+  
+  .faq-container h1 {
+    text-align: center;
+    font-size: 33px;
+    margin-bottom: 50px;
+  }
+  
+  /* FAQ Items */
+  .faq-item {
+    border-bottom: 1px solid #cccbcb;
+    padding: 10px 0;
+  }
+  
+  .faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px 0;
+  }
+  
+  .faq-question .icon {
+    background: #ccc; /* Default grey color */
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-right: 7px; /* Increased spacing */
+    transition: background-color 0.3s ease; /* Smooth transition for color */
+  }
+  
+  .faq-question.active .icon {
+    background: #7859F6; /* Blue color when active */
+  }
+  
+  .faq-question .text {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .faq-question .toggle {
+    font-size: 16px;
+    color: #ccc; /* Default grey color */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth rotation and color transition */
+  }
+  
+  .faq-question.active .toggle {
+    transform: rotate(180deg); /* Rotate arrow upwards */
+    color: #7859F6; /* Blue color when active */
+  }
+  
+  /* FAQ Answer with Smooth Transition */
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0 20px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .faq-answer.active {
+    max-height: 200px; /* Adjust this to fit your content */
+    padding: 10px 20px; /* Add padding when expanded */
+  }
+  
+  .faq-answer p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  

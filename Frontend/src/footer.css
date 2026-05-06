@@ -1,0 +1,150 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+   
+  }
+
+ 
+
+
+  
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .logosection-content{
+    margin-top: 70px;
+    margin-left: 100px;
+  
+  }
+
+  .footer-divider {
+    width: 2px; /* Thickness of the line */
+    background-color: #333; /* Line color */
+    height: 220px; /* Full height of the container */
+    align-self: stretch; /* Makes it span the height of its container */
+
+  }
+
+
+  .footer-logo-img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .footer-socials {
+    margin-top: 10px;
+  }
+  
+  .footer-socials .social-link {
+    margin: 0 5px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .social-link:hover {
+    color: #ccc;
+  }
+  
+  .footer-divider {
+    width: 1px;
+    background-color: #333;
+    height: auto;
+    margin: 0 20px;
+    margin-right: 100px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: left;
+    
+  }
+
+  .footer-section h2{
+    font-size: 28px;
+  }
+
+
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  .footer-section li {
+    margin: 5px 0;
+    font-size: 12px;
+    text-align: left;
+    line-height: 25px;
+    
+
+}
+  
+  .footer-section a {
+    color: #b3b2b2;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
+    color: #979696;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+  }
+
+
+
+  
+  /* Add Vertical Line Between Sections */
+  .footer-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+ 
+
+  .footer-section img{
+    height: 36px;
+    width: 36px;
+    margin-bottom: -10px;
+  }
+  

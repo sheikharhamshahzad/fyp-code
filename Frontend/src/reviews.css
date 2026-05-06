@@ -1,0 +1,68 @@
+.review-container {
+    text-align: center;
+    background-image: url('/public/review-back.jpg');                                                 
+    height: 340px; 
+    width: 100%;
+    background-size: cover;
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack content vertically */
+  }
+  
+  .review-content {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column; /* Stack stars, text, and author vertically */
+    align-items: center;    /* Center content horizontally */
+    text-align: center;     /* Center text inside elements */
+  }
+  
+  
+  .star {
+    font-size: 1.7rem; /* Increased size of stars */
+    color: #ddd;
+    margin: 2px;
+    
+  }
+  
+  .star.filled {
+    color: #FFCB65;
+  }
+  
+  .review-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    margin-top: 20px;
+  }
+  
+  .review-author {
+    font-size: 15px;
+    color: #555;
+    margin-top: 12px;
+  }
+  
+  .dots {
+    display: flex;          /* Use flexbox for dots */
+    justify-content: center; /* Center dots horizontally */
+    gap: 10px;              /* Space between dots */
+    margin-top: 70px;       /* Add some space above the dots */
+  }
+  
+  .dot {
+    width: 6px;
+    height: 6px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .dot.active {
+    background: #6c63ff;
+    width: 8px; /* Bigger active dot */
+    height: 8px;
+    transform: scale(1.2); /* Add slight animation effect */
+  }
+  
